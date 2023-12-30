@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/stock-average-calculator/static/css/main.e47fb3b3.css",
-    "main.js": "/stock-average-calculator/static/js/main.adac44d0.js",
-    "static/js/248.a93c0461.chunk.js": "/stock-average-calculator/static/js/248.a93c0461.chunk.js",
+    "main.css": "/stock-average-calculator/static/css/main.9a0285b8.css",
+    "main.js": "/stock-average-calculator/static/js/main.935e9667.js",
+    "static/js/248.92e30d04.chunk.js": "/stock-average-calculator/static/js/248.92e30d04.chunk.js",
     "static/js/787.7e68932a.chunk.js": "/stock-average-calculator/static/js/787.7e68932a.chunk.js",
     "index.html": "/stock-average-calculator/index.html",
-    "main.e47fb3b3.css.map": "/stock-average-calculator/static/css/main.e47fb3b3.css.map",
-    "main.adac44d0.js.map": "/stock-average-calculator/static/js/main.adac44d0.js.map",
-    "248.a93c0461.chunk.js.map": "/stock-average-calculator/static/js/248.a93c0461.chunk.js.map",
+    "main.9a0285b8.css.map": "/stock-average-calculator/static/css/main.9a0285b8.css.map",
+    "main.935e9667.js.map": "/stock-average-calculator/static/js/main.935e9667.js.map",
+    "248.92e30d04.chunk.js.map": "/stock-average-calculator/static/js/248.92e30d04.chunk.js.map",
     "787.7e68932a.chunk.js.map": "/stock-average-calculator/static/js/787.7e68932a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e47fb3b3.css",
-    "static/js/main.adac44d0.js"
+    "static/css/main.9a0285b8.css",
+    "static/js/main.935e9667.js"
   ]
 }
