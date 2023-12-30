@@ -152,6 +152,7 @@ function StockAverageCalculator() {
             <input
               id={`unit_${index}`}
               maxLength="15"
+              type="number"
               defaultValue={units}
               onChange={(el) => {
                 return (priceRef.current[index]["units"] = el.target.value);
@@ -166,6 +167,7 @@ function StockAverageCalculator() {
             <input
               id={`price_${index}`}
               maxLength="15"
+              type="number"
               defaultValue={price}
               onChange={(el) => {
                 return (priceRef.current[index]["price"] = el.target.value);
@@ -179,32 +181,35 @@ function StockAverageCalculator() {
   };
 
   return (
-    <div className="flex w-11/12 items-baseline justify-evenly">
+    <div className="flex w-11/12 items-baseline justify-evenly flex-col md:flex-row">
       <div className="flex flex-col justify-center border-2 shadow-md rounded-md p-4 ">
         <div className="text-center text-xl font-bold title-wrap uppercase">
           Stock Average Calculator
         </div>
 
         <div>
-          <div className="flex average-container-wrapper">
+          <div className="flex average-container-wrapper flex-col  md:flex-row">
             <CalculatorList />
           </div>
 
           <div className="flex justify-end m-2">
-            <button onClick={handleClear} className="btn-primary mx-2">
+            <button
+              onClick={handleClear}
+              className="btn-primary mx-2 max-[600px]:text-sm"
+            >
               Clear Fields
             </button>
             <button
               type="submit"
               onClick={handleCalculate}
-              className="btn-secondary"
+              className="btn-secondary max-[600px]:text-sm"
             >
               Calculate Average
             </button>
           </div>
         </div>
       </div>
-      <div className="flex flex-col border-2 shadow-md rounded-md p-4">
+      <div className="flex flex-col border-2 shadow-md rounded-md p-4 mt-5 md:m-0">
         <div className="flex flex-col justify-center average-list-wrapper w-64 m-2 mt-0 ">
           <div className="text-center uppercase text-xl font-bold title-wrap mb-2">
             Calculated Average
