@@ -64,7 +64,7 @@ function StockAverageCalculator(props) {
         price = "",
         styleClass = "",
         extra = false,
-        previousPrice = ""
+        previousPrice = false
       } = item;
       return (
         <div
@@ -73,7 +73,7 @@ function StockAverageCalculator(props) {
         >
           <label className="text-center m-1">{title}</label>
           <div className="flex-1 text-center m-1 font-bold text-xl">
-            {extra && previousPrice != 0 && previousPrice + " => "}
+            {extra && previousPrice && previousPrice + " => "}
             {price.toLocaleString("en-IN")}
           </div>
         </div>
