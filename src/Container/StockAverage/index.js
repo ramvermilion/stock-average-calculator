@@ -52,7 +52,7 @@ const purchaseItems = [
   }
 ];
 
-function StockAverageCalculator(props) {
+function StockAverageCalculator() {
   const [priceList, setPriceList] = useState(priceContent);
   const [purchaseValue, setPurchaseValue] = useState([...purchaseItems]);
   const priceRef = useRef(priceContent);
@@ -81,7 +81,7 @@ function StockAverageCalculator(props) {
     });
   };
 
-  const handleCalculate = (event) => {
+  const handleCalculate = () => {
     //First Purchase => unit 1 * price 1
     //Second Purchase => unit 2 * price 2
 
@@ -135,7 +135,7 @@ function StockAverageCalculator(props) {
 
   const CalculatorList = () => {
     return priceList.map((i, index) => {
-      const { title, id, units = "", price = "" } = i;
+      const { title, units = "", price = "" } = i;
       return (
         <div key={index + title} className="average-list m-4">
           <div
